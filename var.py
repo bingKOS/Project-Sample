@@ -60,18 +60,10 @@ getProfile(my_name, age, location, country, date_of_birth)
 #'My name is Marie' instead of 'My name is John'
 getClasses(classes)
 getMarks(marks)
+getGrades(marks)
 text = f"My classes are { ', '.join(classes)}"
 print(text)
-def get_grade_for(value):
-    if value >= 90:
-        return "A"
-    elif value >= 80:
-        return "B"
-    elif value >= 70:
-        return "C"
-    elif value >= 60:
-        return "D"
-    else:
-        return "F"
+
+  
 
 
