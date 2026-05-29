@@ -63,7 +63,4 @@ getMarks(marks)
 getGrades(marks)
 text = f"My classes are { ', '.join(classes)}"
 print(text)
-
   
-
-
