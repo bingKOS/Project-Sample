@@ -74,20 +74,4 @@ def get_grade_for(value):
     else:
         return "F"
 
-def print_marks_table(marks):
-    # determine column widths
-    subj_w = max(len(str(k)) for k in marks.keys())
-    mark_w = max(len("Mark"), max(len(str(v)) for v in marks.values()))
-    grade_w = len("Grade")
-    # header
-    header = f"{ 'Subject'.ljust(subj_w) } | { 'Mark'.rjust(mark_w) } | { 'Grade'.ljust(grade_w) }"
-    sep = f"{ '-'*subj_w }-+-{ '-'*mark_w }-+-{ '-'*grade_w }"
-    print(header)
-    print(sep)
-    # rows
-    for subject, mark in marks.items():
-        grade = get_grade_for(mark)
-        print(f"{ subject.ljust(subj_w) } | { str(mark).rjust(mark_w) } | { grade.ljust(grade_w) }")
-
-print_marks_table(marks)
 
